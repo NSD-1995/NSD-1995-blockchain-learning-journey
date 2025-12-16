@@ -57,6 +57,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nametoAge",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
@@ -107,11 +126,11 @@
 	},
 	"sources": {
 		"contracts/Function.sol": {
-			"keccak256": "0xbdf244f491e1358676a06557d34640618fcecbdcd468c4740fbe4bb4911c9457",
+			"keccak256": "0x06ce8c6f74b4ab631ebd6ed75bcb35e44d943c560b5ac94eb9fb9824caf37825",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://72f107320d3cfb6cb50047c743c70f6b0ecc8c127ae0ee48873ffa561e0aed6b",
-				"dweb:/ipfs/QmYrqNEHKGzPk4rGYNm6rMu1oJUdi8Q9cpt61g7ECVWhC8"
+				"bzz-raw://63cb362b4cfe35c1e849cc7cc0429ad23fa5b8a570db4e071632866a0e50afdd",
+				"dweb:/ipfs/Qmes9NS1ks5wLo12MgZfKaYeEpKwtMSHEk9SbJf5vJstbB"
 			]
 		}
 	},

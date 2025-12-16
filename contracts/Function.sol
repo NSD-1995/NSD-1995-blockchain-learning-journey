@@ -16,6 +16,11 @@ contract MyFunctionContract{
 
     //Struct and Array
 
+    // adding of Mapping
+
+
+    mapping(string => uint256) public nametoAge;
+
     struct People{
 
         string Name;
@@ -26,6 +31,7 @@ contract MyFunctionContract{
 
     function AddPeople(string memory _name, uint256 age) public  {
         people.push(People({Name:_name ,age:age}));
+        nametoAge[_name]=age;
     }
 
 
