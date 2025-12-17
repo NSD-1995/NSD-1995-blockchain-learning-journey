@@ -1,0 +1,171 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "Name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "AddPersoninStorage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "createSimpleStorageContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "simplestorageIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "getAddperonStorage",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct SimpleStorage.People",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "getSimpleArrayBasedonIndex",
+				"outputs": [
+					{
+						"internalType": "contract SimpleStorage",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSimpleStorageArray",
+				"outputs": [
+					{
+						"internalType": "contract SimpleStorage[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "simpleStorageArray",
+				"outputs": [
+					{
+						"internalType": "contract SimpleStorage",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/StorageFactory.sol": "StorageFactory"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SimpleStorage.sol": {
+			"keccak256": "0xe16778dba34f8e7d407ddcfe192de0aaa33e5ccccda1bde78d07cb95e0f0dd0d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8476bfc0b3eecbbb62fd2d81cc9b8bb08d6e7c55cc8818bc76bef1c555ef23b5",
+				"dweb:/ipfs/QmQ5eHfFsDgW9eEurdNNnYvt2NgbxQ5chBPAGSmKFv4Yxa"
+			]
+		},
+		"contracts/StorageFactory.sol": {
+			"keccak256": "0x15abc620514a8ec22d6b06eaa9a1df01064659bbe203bc3c0905b042149b7ed8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f0bd1ad0eb87ad518bfa5b96a1e3d22eef8bae8598a21d4f6d35cbbad25d1405",
+				"dweb:/ipfs/QmaFXn3tNpKeR43b9cVaFymVj2rJ7mv5RwNfyyXjSfM2C3"
+			]
+		}
+	},
+	"version": 1
+}
