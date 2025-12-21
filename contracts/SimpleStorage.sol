@@ -16,7 +16,7 @@ contract SimpleStorage {
 
 
     // Setter Function to assing name and age
-    function AddPerosnToArry(string memory Name, uint Age) public {
+    function AddPerosnToArry(string memory Name, uint Age) public virtual {
         people.push(People({name: Name, age: Age}));
         nametoAge[Name] = Age;
     }
