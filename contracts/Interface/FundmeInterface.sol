@@ -2,50 +2,33 @@
 pragma solidity ^0.8.0;
 
 import "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
+import "contracts/Library/PriceConvertor.sol";
 
-//0x694AA1769357215DE4FAC081bf1f309aDC325306
+
+// 0x694AA1769357215DE4FAC081bf1f309aDC325306
 contract Fundme {
-    AggregatorV3Interface public priceFeed;
+    using PriceConvertor for uint256;
 
-    uint256 public miniumUSD = 50;
+    uint256 public minimumUSD = 50 * 1e18;
 
     address[] public funders;
-
     mapping(address => uint256) public amountsendbyFunders;
 
-    //     struct Funder {
-    //     address funder;
-    //     uint256 amount;
-    // }
+    AggregatorV3Interface public priceFeed;
 
-    constructor(address _priceFeed) {
-        priceFeed = AggregatorV3Interface(_priceFeed);
+    constructor(address pricefeedAddress) {
+        priceFeed = AggregatorV3Interface(
+            pricefeedAddress
+        );
     }
 
     function fund() public payable {
-        require(
-            getConversionEthAmount(msg.value) >= miniumUSD * 1e18,
-            "Didnt send enough moeny"
+        require(  //msg.value is first paramter , second paramater is pricefeed
+            msg.value.getConversionEthAmount(priceFeed) >= minimumUSD,
+            "Didn't send enough money"
         );
 
-        funders.push((msg.sender));
-        amountsendbyFunders[msg.sender] = msg.value;
-    }
-
-    function getVersion() public view returns (uint) {
-        return priceFeed.version();
-    }
-
-    function getLatestPrice() public view returns (uint256) {
-        (, int price, , , ) = priceFeed.latestRoundData();
-        return uint256(price * 1e10);
-    }
-
-    function getConversionEthAmount(
-        uint256 amount
-    ) public view returns (uint256) {
-        uint256 ethPrice = getLatestPrice();
-        uint256 ethAMountinUSd = uint((ethPrice * amount) / 1e18);
-        return ethAMountinUSd;
+        funders.push(msg.sender);
+        amountsendbyFunders[msg.sender] += msg.value; // if the same user send money then + required 
     }
 }

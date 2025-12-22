@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "contract AggregatorV3Interface",
+						"name": "priceFeed",
+						"type": "AggregatorV3Interface"
+					}
+				],
+				"name": "getConversionEthAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Library/PriceConvertor.sol": "PriceConvertor"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"contracts/Library/PriceConvertor.sol": {
+			"keccak256": "0xfb9bcc7738f1bd81e3de7fb3d608a9e9fee852581b8df0d77b02c2f33aa92aca",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://857ee384090ca4d9f7879ede3a4e8e60b2a8c48d1c82619d1821ef830d04aac6",
+				"dweb:/ipfs/QmX1eKbaHT4PyuJFxEUEUAucLZTnY4Dcmt9LGEPQ8VB3KR"
+			]
+		}
+	},
+	"version": 1
+}
