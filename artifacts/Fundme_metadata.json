@@ -76,6 +76,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "priceFeed",
 				"outputs": [
 					{
@@ -85,6 +98,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -124,11 +144,11 @@
 			]
 		},
 		"contracts/Interface/FundmeInterface.sol": {
-			"keccak256": "0x31a20c90180356aadf635fb78091cffd49011be30e90a709729d4a4573ab941e",
+			"keccak256": "0xb669928187ac8baadb6d97ecab4c0f8c5ebf39fdfe8102098d22b85fd36c94a2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1a0fd1488208fef546a58f7c7e616490c38ec58121dd5cd533aba6c6bae80104",
-				"dweb:/ipfs/QmaxxS4KUFJaZBT4vPgCoBSPjQEdfEkBRfMtGHuP3w1XxJ"
+				"bzz-raw://511b13b612cc7db725c08b10062012abd1d379a28f967d7016a87d431148cf4d",
+				"dweb:/ipfs/Qmb3W4N9yvHiYasyZQSAR2zp4rXX1n6VfMMAcVEH2sQC5J"
 			]
 		},
 		"contracts/Library/PriceConvertor.sol": {
