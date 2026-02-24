@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwnerDetails",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/OwnContracts/Ownership.sol": "Ownershiptransfer"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/OwnContracts/Ownership.sol": {
+			"keccak256": "0xab0d6e0f7571f18d2e46f63ec4eb12b20b7f47795fcb13a7a78dcbdf11eadd5b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cdfb4a54f72d064a9adac50f1fb7aad40a7832a4f6496005b37ffcbba2083729",
+				"dweb:/ipfs/QmSRB7LjEWR75raF1iY9oA9MkA4g7AikjCxNTvXPko7dXX"
+			]
+		}
+	},
+	"version": 1
+}
